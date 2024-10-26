@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Star+Jedi&display=swap');
+
+.graph-container {
+  height: 500px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000; 
+  position: relative;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.node-hero {
+  text-align: center;
+  background: #e9c46a;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #f4a261;
+  font-family: 'Star Jedi', sans-serif;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.node-film {
+  background: #2a9d8f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #264653;
+  font-family: 'Star Jedi', sans-serif;
+}
+
+.node-starship {
+  background: #e76f51;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #d62839;
+  font-family: 'Star Jedi', sans-serif;
+}
+
+.edge-film {
+  stroke: #f4a261;
+}
+
+.edge-starship {
+  stroke: #e76f51;
+}
+
+.react-flow__background {
+  background-color: rgba(255, 255, 255, 0.1);
+}

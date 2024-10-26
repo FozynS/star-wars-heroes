@@ -1,0 +1,40 @@
+.hero-name_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-name {
+  width: 60%;
+  text-align: center;
+  background: #e9c46a;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #f4a261;
+  font-family: 'Star Jedi', sans-serif;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.back-button {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 2px solid #d9534f;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Star Jedi', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.back-button:hover {
+  background-color: #d9534f;
+  transform: scale(1.05);
+}
+
+.back-button:focus {
+  outline: none; 
+}
