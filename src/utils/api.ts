@@ -8,25 +8,43 @@ const BASE_URLS = {
 };
 
 export const fetchHeroes = async (page: number = 1) => {
-  const response = await axios.get(`${CORS_PROXY}${API_URL}/people?page=${page}`);
-  return response.data;
+  try {
+    const response = await axios.get(`${API_URL}/people?page=${page}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching heroes:', error);
+    throw error;
+  }
 };
 
 export const fetchHeroDetails = async (heroId: string) => {
-  const response = await axios.get(`${CORS_PROXY}${API_URL}/people/${heroId}`);
-  return response.data;
+  try {
+    const response = await axios.get(`${API_URL}/people/${heroId}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching hero details:', error);
+    throw error;
+  }
 };
 
 export const fetchFilms = async (filmIds: string[]) => {
-  const filmUrls = filmIds.map(id => `${BASE_URLS.films}${id}/`);
-  const filmPromises = filmUrls.map(url => axios.get(url));
-  const films = await Promise.all(filmPromises);
-  return films.map(film => film.data);
+  const filmPromises = filmIds.map(id => axios.get(`${BASE_URLS.films}${id}/`));
+  try {
+    const films = await Promise.all(filmPromises);
+    return films.map(film => film.data);
+  } catch (error) {
+    console.error('Error fetching films:', error);
+    throw error; 
+  }
 };
 
 export const fetchStarships = async (starshipIds: string[]) => {
-  const starshipUrls = starshipIds.map(id => `${BASE_URLS.starships}${id}/`);
-  const starshipPromises = starshipUrls.map(url => axios.get(url));
-  const starships = await Promise.all(starshipPromises);
-  return starships.map(starship => starship.data);
+  const starshipPromises = starshipIds.map(id => axios.get(`${BASE_URLS.starships}${id}/`));
+  try {
+    const starships = await Promise.all(starshipPromises);
+    return starships.map(starship => starship.data);
+  } catch (error) {
+    console.error('Error fetching starships:', error);
+    throw error;
+  }
 };
