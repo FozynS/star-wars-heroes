@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/star-wars-heroes/static/css/main.cb61fbb2.css",
-    "main.js": "/star-wars-heroes/static/js/main.ddd32edc.js",
+    "main.css": "/star-wars-heroes/static/css/main.bfeb62ab.css",
+    "main.js": "/star-wars-heroes/static/js/main.5b86afa4.js",
     "index.html": "/star-wars-heroes/index.html",
-    "main.cb61fbb2.css.map": "/star-wars-heroes/static/css/main.cb61fbb2.css.map",
-    "main.ddd32edc.js.map": "/star-wars-heroes/static/js/main.ddd32edc.js.map"
+    "main.bfeb62ab.css.map": "/star-wars-heroes/static/css/main.bfeb62ab.css.map",
+    "main.5b86afa4.js.map": "/star-wars-heroes/static/js/main.5b86afa4.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb61fbb2.css",
-    "static/js/main.ddd32edc.js"
+    "static/css/main.bfeb62ab.css",
+    "static/js/main.5b86afa4.js"
   ]
 }
